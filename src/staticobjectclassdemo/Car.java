@@ -1,19 +1,18 @@
-package thiskeyword;
+package staticobjectclassdemo;
 
 public class Car {
 	
-	String company; 
-	String modal; 
-	String color; 
-	double milage; 
-	int wheels;
+	String company; // instance global variable
+	String modal; // instance global variable
+	String color; // instance global variable
+	double milage; // instance global variable
+	static int wheels = 4; // static global variable
 	
-	public Car(String company,String modal,String color,double milage,int wheels) {
+	public Car(String company,String modal,String color,double milage) {
 		this.company = company;
 		this.modal = modal;
 		this.color = color;
 		this.milage = milage;
-		this.wheels = wheels;
 	}
 	
 	public void startCar() {
