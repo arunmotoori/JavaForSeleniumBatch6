@@ -2,7 +2,7 @@ package variablespatttwo;
 
 public class Demo {
 	
-	static int a = 5;  // Global variable
+	public static int a = 5;  // Global variable
 
 	public static void main(String[] args) {
 		
