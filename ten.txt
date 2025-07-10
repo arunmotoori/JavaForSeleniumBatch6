@@ -1,0 +1,4 @@
+My name is Arun Motoori.
+I love Java programming.
+Java is a popular programming language in the market
+I am explain how to write text into the file.
