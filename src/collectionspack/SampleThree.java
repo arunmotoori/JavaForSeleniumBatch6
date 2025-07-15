@@ -2,6 +2,7 @@ package collectionspack;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class SampleThree {
@@ -22,9 +23,15 @@ public class SampleThree {
 		set.add(9);
 		set.add(9);
 		
-		for(Integer e : set) {
-			System.out.println(e);
+		Iterator<Integer> itr = set.iterator();
+		
+		while(itr.hasNext()) {
+			System.out.println(itr.next()); 
 		}
+		
+//		for(Integer e : set) {
+//			System.out.println(e);
+//		}
 		
 
 	}

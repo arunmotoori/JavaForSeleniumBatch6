@@ -1,6 +1,7 @@
 package collectionspack;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class SampleOne {
 
@@ -15,6 +16,12 @@ public class SampleOne {
 		list.add(9); // 4
 		list.add(9); // 5
 		
+		Iterator<Integer> itr = list.iterator();
+		
+		while(itr.hasNext()) {
+			System.out.println(itr.next()); // 9 5 7 1 9 9
+		}
+		
 //		System.out.println(list.get(0)); // 9
 //		System.out.println(list.get(1)); // 5
 //		System.out.println(list.get(2)); // 7
@@ -24,17 +31,17 @@ public class SampleOne {
 //			System.out.println(list.get(i)); // 9 5 7 1 
 //		}
 		
-		for(Integer e : list) {
-			System.out.println(e); // 9 5 7 1 
-		}
+//		for(Integer e : list) {
+//			System.out.println(e); // 9 5 7 1 
+//		}
 		
-		System.out.println("---------------");
-		
-		list.add(8); // 6
-		
-		for(Integer e : list) {
-			System.out.println(e); // 9 5 7 1 8
-		}
+//		System.out.println("---------------");
+//		
+//		list.add(8); // 6
+//		
+//		for(Integer e : list) {
+//			System.out.println(e); // 9 5 7 1 8
+//		}
 		
 
 	}
